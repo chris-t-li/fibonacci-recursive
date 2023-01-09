@@ -1,5 +1,9 @@
 function fibonacci(n) {
-  // type your code here
+  // fibseq = [0,1,1,2,3,5,8...]
+  if (n < 2) {
+    return n;
+  }
+  return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
 if (require.main === module) {
